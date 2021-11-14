@@ -1,0 +1,119 @@
+:root {
+    --orange-clr:hsl(31, 77%, 52%);
+    --cyan-clr:hsl(184, 100%, 22%);
+    --dark-cyan-clr:hsl(179, 100%, 13%);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body, 
+button{
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+h3{
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+p{
+    font-size: 15px;
+    line-height: 1.8em;
+}
+
+.card{
+   padding: 35px; 
+}
+
+.card h3 {
+    padding-bottom: 20px;
+}
+
+.card img {
+    padding-bottom: 25px;
+    padding-top: 5px;
+}
+
+.card p {
+    padding-bottom: 20px;
+}
+
+.btn{
+    background-color: #fff;
+    border: 2px solid #fff;
+    border-radius: 30px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.container {
+    padding: 20px;
+}
+
+.container > :nth-child(1){
+    background-color: var(--orange-clr);
+    color: #fff;
+    border-radius: 15px 15px 0 0;
+}
+.container > :nth-child(2){
+    background-color: var(--cyan-clr);
+    color: #fff;
+}
+.container > :nth-child(3){
+    background-color: var(--dark-cyan-clr);
+    color: #fff;
+    border-radius: 0 0 15px 15px;
+}
+
+.container > :nth-child(1) .btn {
+    color: var(--orange-clr);
+}
+.container > :nth-child(1) .btn:hover {
+    background-color: transparent;
+    color: #fff;
+}
+
+.container > :nth-child(2) .btn {
+    color: var(--cyan-clr);
+}
+.container > :nth-child(2) .btn:hover {
+    background-color: transparent;
+    color: #fff;
+}
+
+.container > :nth-child(3) .btn {
+    color: var(--dark-cyan-clr);
+}
+.container > :nth-child(3) .btn:hover {
+    background-color: transparent;
+    color: #fff;
+}
+
+@media (min-width:992px) {
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        max-width: 900px;
+        margin: auto;
+    }
+
+    .container > :nth-child(1) {
+        border-radius: 15px 0 0 15px;
+    }
+    .container > :nth-child(3){
+        border-radius: 0 15px 15px 0;
+    }
+
+    .card {
+        padding: 45px;
+    }
+
+    .card p {
+        padding-bottom: 70px;
+    }
+}
